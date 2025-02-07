@@ -1,0 +1,128 @@
+/* Importation de la police de caractères Instagram */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; /* Police Instagram */
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa; /* Couleur de fond d'Instagram */
+    color: #262626; /* Couleur de texte principale */
+}
+
+/* Styles généraux */
+a {
+    color: #0095f6; /* Couleur des liens Instagram */
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 1rem 0;
+    text-align: center; /* Logo centré */
+}
+
+header h1 {
+    font-family: 'Roboto', cursive; /* Police du logo Instagram */
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: flex-end; /* Alignement à droite */
+    padding: 0 1rem;
+}
+
+nav a {
+    margin-left: 1rem;
+}
+
+/* Main */
+main {
+    padding: 2rem;
+}
+
+/* Feed */
+#feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+
+.post {
+    border: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    border-radius: 4px; /* Bords arrondis */
+    overflow: hidden; /* Pour gérer le dépassement des images */
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.post-author {
+    font-weight: 500;
+    margin-right: auto;
+}
+
+.post-image {
+    width: 100%;
+}
+
+.post-image img {
+    width: 100%;
+    display: block; /* Pour éviter les espaces en dessous des images */
+}
+
+.post-content {
+    padding: 1rem;
+}
+
+.post-caption {
+    margin-bottom: 0.5rem;
+}
+
+.post-date {
+    color: #8e8e8e;
+    font-size: 0.875rem;
+}
+
+/* Formulaires */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+form input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Liens */
+a {
+    color: #0095f6;
+    text-decoration: none;
+}

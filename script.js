@@ -69,5 +69,20 @@ if (logoutLink) {
     });
 }
 
+// ... (Code précédent)
+
+// Enregistrement du service worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(registration => {
+        console.log('Service worker enregistré :', registration);
+      })
+      .catch(error => {
+        console.error('Erreur d\'enregistrement du service worker :', error);
+      });
+  });
+}
+
 
 // ... (Reste du code pour récupérer les publications, comme précédemment)
